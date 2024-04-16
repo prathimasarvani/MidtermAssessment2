@@ -1,0 +1,79 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #fff;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .main-nav {
+    background: #333; /* Example background color for the nav bar */
+    color: #fff;
+    padding: 10px 20px; /* Padding around the navigation links */
+  }
+  
+  .main-nav .nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end; /* Aligns the nav list to the right */
+  }
+  
+  .main-nav .nav-list li {
+    padding: 0 10px; /* Space between navigation items */
+  }
+  
+  .main-nav .nav-list li a {
+    text-decoration: none;
+    color: white; /* Text color for links */
+  }
+  
+  
+  h1 {
+    font-size: 2.5rem; /* Set the size of the main heading */
+    margin-bottom: 1rem;
+  }
+
+  
+  .card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card img {
+    width: 70px; /* Set your desired icon size */
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card p {
+    font-size: 0.6rem;
+  }
+  
+  /* Responsive adjustments for smaller screens */
+/*  @media (max-width: 800px) {
+    .card-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }*/
+
+    /* Add media query for responsive design */
+@media (max-width: 768px) {
+  .cards-container {
+      flex-direction: column; /* Stack cards vertically on small screens */
+  }
+  
+  .cards-container {
+    display: flex; /* Use flexbox to lay out cards in a row */
+    justify-content: center; /* Center cards in the container */
+    gap: 20px; /* Space between cards */
+}
+
+.card {
+    flex: 1; /* Each card will take up equal space */
+    max-width: calc(33.333% - 20px); /* Assign max width to each card, accounting for the gap */
+    /* Further card styles */
+}
+  }
+  

@@ -1,0 +1,116 @@
+body, html {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('images/space.jpg') no-repeat center center fixed; 
+    background-size: cover;
+  }
+
+  .main-nav {
+    background: #333; /* Example background color for the nav bar */
+    color: #fff;
+    padding: 10px 20px; /* Padding around the navigation links */
+  }
+  
+  .main-nav .nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end; /* Aligns the nav list to the right */
+  }
+  
+  .main-nav .nav-list li {
+    padding: 0 10px; /* Space between navigation items */
+  }
+  
+  .main-nav .nav-list li a {
+    text-decoration: none;
+    color: white; /* Text color for links */
+  }
+  
+  .pricing-section {
+    background: url('images/space.jpg');
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .floating-robot {
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    width: 100px; /* Adjust as needed */
+    z-index: 10; /* Ensure it's above other content */
+  }
+  
+  .pricing-container {
+    color: black;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .price-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px; /* Width of each card */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .price-card h2 {
+    color: #333;
+  }
+  
+  .price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  .price-card button {
+    background-color: #5cb85c; /* Bootstrap 'success' color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .price-card button:hover {
+    background-color: #4cae4c; /* Darken the color on hover */
+  }
+
+  .package-description {
+    font-size: 0.8rem; /* Set the size to your liking */
+    margin-bottom: 1rem; /* Add some space before the price */
+    font-weight: normal; /* Standard font weight */
+  }
+
+.benefits-list {
+  font-size: 0.8rem;
+  list-style-type: none; /* Remove default list bullets */
+  padding-left: 0; /* Remove default padding */
+}
+
+.benefits-list li {
+  padding-left: 24px; /* Create space for the tick mark */
+  position: relative; /* Pseudo-elements are positioned relative to their parent */
+}
+
+.benefits-list li::before {
+  content: '✔'; /* Add your tick mark */
+  position: absolute; /* Position it absolutely within the li */
+  left: 0; /* Position the tick mark at the start of the li */
+  top: 0; /* Align it with the top of the li */
+}
+  /* You can also add responsive styles */
+  @media (max-width: 768px) {
+    .pricing-container {
+      flex-direction: column;
+    }
+  }
+  

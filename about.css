@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navigation Styles */
+  .navbar {
+    background-color:#000 !important; /* Adjust the color to match the specific black shade */
+  }
+  
+  .navbar-brand {
+    font-weight: 700;
+    color: #fff;
+  }
+  
+  .profile-section {
+    display: flex;
+    align-items: ;
+    justify-content: space-around;
+    padding: 50px;
+  }
+  
+  .profile-content {
+    max-width: 600px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5em;
+  }
+  
+  .profile-content p {
+    font-size: 0.8rem;
+    margin-bottom: 2em;
+  }
+
+  
+  .stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .stat {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Adjust spacing between stats as needed */
+  }
+  
+  .icon {
+    width: 64px; /* Adjust icon size as needed */
+    height: auto;
+    margin-right: 10px; /* Spacing between icon and number */
+  }
+  
+  .stat-info {
+    text-align: center;
+  }
+  
+  .stat-info strong {
+    display: block;
+    font-size: 2.5rem; /* Large font size for numbers */
+    font-weight: bold;
+  }
+  
+  .stat-info small {
+    font-size: 0.8rem; /* Smaller font size for descriptions */
+   }
+  
+   .editor-photo {
+    flex: 1;
+    height: 100vh; /* Full height of the viewport */
+  }
+  
+  .editor-photo img {
+    height: 100%;
+    width: auto;
+    object-fit: cover; /* This will cover the height fully and clip the width if necessary */
+  }
+  
+  /* Responsive adjustments for mobile */
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+    }
+  
+    .hero-section p {
+      font-size: 1rem; /* Smaller size for mobile */
+    }
+    
+    .editor-photo {
+      height: auto;
+      width: 100%;
+    }
+  
+    .editor-photo img {
+      width: 100%;
+      height: auto;
+    }
+  }

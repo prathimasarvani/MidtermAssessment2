@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - SteveEditor</title>
+  <!-- Include Bootstrap CSS for styling -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="checkout.css"> <!-- Link to your checkout.css file -->
+</head>
+<body>
+
+<div class="container mt-5">
+  <h2>Checkout</h2>
+  <div id="checkout-details">
+    <!-- Details will be filled in by JavaScript -->
+  </div>
+  <div class="total-price">
+    <!-- Total price will be filled in by JavaScript -->
+  </div>
+  <div class="actions">
+    <button class="btn btn-danger" onclick="deleteItem()">Delete</button>
+    <button class="btn btn-success" onclick="confirmPurchase()">Confirm</button>
+  </div>
+  <!-- Additional checkout form elements here -->
+</div>
+
+<script>
+// This script will parse the query parameters from the URL
+document.addEventListener('DOMContentLoaded', () => {
+  const params = new URLSearchParams(window.location.search);
+  const productName = params.get('productName');
+  const productPrice = params.get('productPrice');
+
+  document.getElementById('checkout-details').innerHTML = `
+    <p>Product: ${productName}</p>
+    <p>Price: $${productPrice}</p>
+  `;
+});
+
+
+
+function deleteItem() {
+  // Clear the checkout details and show a message or redirect
+  document.getElementById('checkout-details').innerHTML = '<p>Your cart is empty.</p>';
+}
+
+function confirmPurchase() {
+  // Implement confirmation logic, could post data to a server or show a confirmation message
+  alert('Purchase confirmed! Thank you for your order.');
+}
+</script>
+
+</body>
+</html>

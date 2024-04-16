@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('images/space.jpg') no-repeat center center fixed; 
+    background-size: cover;
+}
+
+.main-nav {
+    background: #333; /* Example background color for the nav bar */
+    color: #fff;
+    padding: 10px 20px; /* Padding around the navigation links */
+  }
+  
+  .main-nav .nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end; /* Aligns the nav list to the right */
+  }
+  
+  .main-nav .nav-list li {
+    padding: 0 10px; /* Space between navigation items */
+  }
+  
+  .main-nav .nav-list li a {
+    text-decoration: none;
+    color: white; /* Text color for links */
+  }
+
+  .contact-header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .contact-header h2 {
+    color: #fff;
+    margin-bottom: 20px;
+      }
+  
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* ... (other styles) ... */
+
+.contact-container {
+  display: flex; /* Flex container */
+  justify-content: center; /* Center children horizontally */
+  align-items: center; /* Center children vertically */
+  flex-direction: column; /* Stack children vertically */
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px; 
+  margin: auto; /* Center this container */
+  max-width: 300px; /* Set a max-width for the container */
+  height: 300px; /* Set a fixed height for the container */
+  z-index: 1000; /* Ensures it's above other content */
+  position: relative; /* Establish a positioning context */
+  top: 10%; /* Push 50% from the top of the nearest relatively positioned parent */
+  transform: translateY(-50%); /* Offset by -50% of its own height to center it */
+}
+
+/* Add this to style your .social-links class */
+.social-links {
+  display: flex; /* Flex container */
+  justify-content: center; /* Center children horizontally */
+  align-items: center; /* Center children vertically */
+  list-style-type: none; /* Remove list bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+
+.social-links a {
+  margin: 0 10px; /* Space between links */
+}
+
+.social-links img {
+  width: 40px; /* Adjust based on the size of your icons */
+  height: auto;
+}

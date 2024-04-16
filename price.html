@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Price - SteveEditor</title>
+  <link rel="stylesheet" href="price.css">
+</head>
+<body>
+
+       <!-- Main Navigation -->
+   <nav class="main-nav">
+    <ul class="nav-list">
+      <li><a href="index.html">Main</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="program.html">Program</a></li>
+      <li><a href="#">Price</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="pricing-section">
+    <h1>Price</h1>
+    <img src="images/robot.png" alt="Floating Robot" class="floating-robot">
+    <div class="pricing-container">
+      <!-- Standard Package -->
+      <div class="price-card standard">
+        <h2>Standard</h2>
+        <p class="package-description">Special first packet</p>
+        <p class="price">$300</p>
+        <ul class="benefits-list">
+            <li>15 video lectures</li>
+            <li>Access to a shared chat</li>
+            <li>Access to materials for 3 months</li>
+            <li>Certificate of completion</li>
+            <!-- Add more benefits as needed -->
+          </ul>
+        <button class="btn btn-primary buy-now" onclick="redirectToCheckout('Standard Package', '300')">Buy now</button>
+      </div>
+      
+      <!-- Advanced Package -->
+      <div class="price-card advanced">
+        <h2>Advanced</h2>
+        <p class="package-description">Special second packet</p>
+        <p class="price">$500</p>
+            <ul class="benefits-list">
+            <li>15 video lecture</li>
+            <li>Access to a shared chat</li>
+            <li>Access to materials for 3 months</li>
+            <li>Certificate completion</li>
+            <li>+3 videos on how to get a cool order fast</li>
+            <li>+2 videos on how to work with clients</li>
+            <li>+1 personal call with me</li>
+            <!-- Add more benefits as needed -->
+          </ul>
+          <button class="btn btn-primary buy-now" onclick="redirectToCheckout('Advanced Package', '500')">Buy now</button>
+      </div>
+
+      <!-- Professional Package -->
+      <div class="price-card professional">
+        <h2>Professional</h2>
+        <p class="package-description">Special third packet</p>
+        <p class="price">$1000</p>
+        <ul class="benefits-list">
+            <li>15 video lecture</li>
+            <li>Access to a shared chat</li>
+            <li>Access to materials for 3 months</li>
+            <li>Certificate completion</li>
+            <li>+3 videos on how to get a cool order fast</li>
+            <li>+2 videos on how to work with clients</li>
+            <li>+1 personal call with me</li>
+            <li>+Mentoring Support</li>
+            <li>+Checking homework</li>
+            <li>+Ready-made fields 15 projects</li>
+            <!-- Add more benefits as needed -->
+          </ul>        
+          <button class="btn btn-primary buy-now" onclick="redirectToCheckout('Professional Package', '1000')">Buy now</button>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function redirectToCheckout(productName, productPrice) {
+      // Redirect to the checkout page with query parameters
+      window.location.href = `checkout.html?productName=${encodeURIComponent(productName)}&productPrice=${encodeURIComponent(productPrice)}`;
+    }
+  </script>  
+
+</body>
+</html>

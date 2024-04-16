@@ -1,0 +1,83 @@
+/* General Styles */
+body, html {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('images/space.jpg') no-repeat center center fixed; 
+    background-size: cover;
+  }
+  
+  /* Navigation Styles */
+  .navbar {
+    background-color:#000 !important; /* Adjust the color to match the specific black shade */
+  }
+  
+  .navbar-brand {
+    font-weight: 700;
+    color: #fff;
+  }
+  
+  /* Hero Section Styles */
+  .hero-section {
+    background: url('images/space.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    color: white;
+    padding: 120px 0;
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem; /* Adjust size as needed */
+    margin-bottom: 1rem;
+  }
+  
+  .hero-section p {
+    font-size: 1.5rem; /* Adjust size as needed */
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero-section .btn {
+    padding: .8rem 2rem; /* Larger button size */
+    border-radius: 20px; /* Rounded corners for the button */
+  }
+
+
+  .image-container {
+    /* Styles for the image container, if needed */
+    margin-top: 30px;
+    text-align: center; /* if you want the image to be centered */
+}
+
+.image-container img {
+    display: block; /* to ensure it takes up the full width available */
+    margin: 0 auto; /* to center the image if its width is less than the container */
+    /* Add any padding or margins as needed to position it correctly */
+}
+    
+  /* Footer Styles */
+  .footer {
+    padding: 1rem 0;
+    background: url('images/space.jpg') no-repeat center center fixed; 
+    background-size: cover;/* Match the navigation bar */
+    color: #fff;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .hero-section h1 {
+      font-size: 2.5rem; /* Smaller size for mobile */
+    }
+  
+    .hero-section p {
+      font-size: 1rem; /* Smaller size for mobile */
+    }
+  }
+  
+  /* Add more custom styles as needed */
+  
